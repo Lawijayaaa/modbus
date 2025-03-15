@@ -138,7 +138,7 @@ async def run_server():
     # Jalankan fungsi pembaruan data dan server secara bersamaan
     await asyncio.gather(
         update_register_values(),
-        StartAsyncTcpServer(context, identity=identity, address=("0.0.0.0", 1502), allow_reuse_address=True)
+        StartAsyncTcpServer(context, identity=identity, address=("192.168.1.13", 1502), allow_reuse_address=True)
     )
 
 # Menjalankan server
